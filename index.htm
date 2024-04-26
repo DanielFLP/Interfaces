@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://aframe.io/releases/1.5.0/aframe.min.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <a-scene>
+        <a-entity position="0 0 0">
+            <a-camera>
+                <a-cursor></a-cursor>
+            </a-camera>
+          </a-entity>
+            <img  id= "img" src="https://danielflp.github.io/Interfaces/BoucleBubblyRows001_DISP_1K_SPECULAR.png">
+            <img  id= "img2" src="https://danielflp.github.io/Interfaces/ConcretePrecastPlates004_DISP_2K_SPECULAR.png">
+            <img  id= "img3" src="https://danielflp.github.io/Interfaces/RammedEarth006_COL_2K_SPECULAR.png">
+            <img  id= "img4" src="https://danielflp.github.io/Interfaces/VeneerWhiteOakRandomMatched001_DISP_2K_SPECULAR.png">
+
+            <a-asset-item id="modelo" src="https://danielflp.github.io/Interfaces/scene.gltf" ></a-asset-item>
+        <a-entity gltf-model="#modelo" position="0 1 -5" scale="90 90 90"></a-entity>
+        <a-sphere src="#img2"position="0 1.25 -5" radius="1.25" color="#EF2D5E"></a-sphere>
+        <a-box src="#img3"position="-1 0.5 -3" rotation="0 90 0" color="#5E7ADB"></a-box>
+        <a-cylinder src="#img" position="1 0.75 -5" radius="0.5" height="1.5" color="#FFC65D"></a-cylinder>
+        <a-plane src="#img4"position="0 0 -4" rotation="-90 0 0" width="4" height="4" color="#DB5E71"></a-plane>
+        <a-sky color="#5EC9DB"></a-sky>
+      </a-scene>
+</body>
+</html>
